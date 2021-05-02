@@ -7,18 +7,20 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <main>
-            
+        <main>          
             <header class='titulo'>
                 <h1>Fama y Aproximación</h1>
             </header>
-            <section class="numero">
+            <section class="presentacion">
                 <div class="descripcion">
-                    <h2>Hemos calculado un número para que intentes adivinarlo <br>
-                    tiene 4 cifras, no comienza por 0 y las cifras no se repiten</h2>
+                    <h2>Hemos calculado un número para que intentes adivinarlo. <br>
+                    Tiene 4 cifras, no comienza por 0 y las cifras no se repiten</h2>
                 </div>
                 <div class="numero">
                     <h1>????</h1>
+                </div>
+                <div class="candidato">
+                    <input type="number" name="" id="nro_candidato">
                 </div>
             </section>
             <section class='tablero'>
@@ -36,8 +38,12 @@
                 <div class="btnTablero" id='btn_Back'>Borrar</div>
             </section>
 
-        </main>
+            <section>
+                <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+            </section>
 
+        </main>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="/scripts/scripts.js"></script>
     </body>
 </html>
